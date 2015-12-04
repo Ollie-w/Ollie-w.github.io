@@ -1,0 +1,359 @@
+html {
+ min-height: 100%;
+ min-width: 100%; 
+ margin: 0px, 0px, 0px, 0px; 
+ text-align:center;
+ box-sizing: border-box;
+background-color: #F4F6F7;
+font-size: 16px;
+overflow-y: scroll;
+overflow-x: hidden;
+    
+}
+
+body {
+ min-height: 100%;
+ min-width: 100%; 
+ margin-bottom: 0px;
+ margin-left: 0px;
+ margin-right: 0px;
+ margin-top: 0px !important;
+ text-align:center;
+ box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background-color: #56A5B4;
+    color: #F4F6F7;
+}
+
+::selection {
+    background-color: #56A5B4;
+    color: #F4F6F7;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+}
+    
+/* Header */
+
+header {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0px 1px 10px 1px black;
+}
+
+header h1 span {
+    color: #3c3c3c;
+    font-family: 'Playfair Display SC', serif;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    border: 5px solid #3c3c3c;
+    padding: 3px 15px 4px 15px;
+    box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+
+/* Cycling Oversize Text */
+
+.cycleContainer {
+    position: relative;
+    margin-top: 0px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#cyclingText {
+font-size: 13em;
+top: 50%;
+position: absolute;
+margin: auto;
+height: 40%;
+top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.beautiful {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    top: 25%;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.beautiful span {
+    font-size: 2.5em;
+}
+
+/* Skillset */
+
+.codeSkills {
+    background-image: url(../images/javascriptcode.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 350px;
+}
+
+.codeSkills h2 {
+    color: rgb(244, 246, 247);
+    margin: 0 auto;
+    padding-top: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+.codeSkills h2 span {
+    border-bottom: solid 7px rgba(244, 246, 247, 0.5);
+    
+}
+
+.skillset {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+   .skillset img {
+    display: inline;
+       padding: 5px;
+       max-width: 100%;
+       width: 70px;
+}
+
+.skillset h2 {
+    color: black;
+    text-shadow: 1px 3px 0 rgb(255, 255, 255);
+}
+
+/*Motion Design Development Section*/
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.motion p, .design p, .dev p{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    text-align: left;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 1.6em;
+    clear: left;
+}
+
+.motion, .design, .dev {
+    padding: 10px;
+    margin-left: 90px;
+}
+
+.motion h3, .design h3, .dev h3 {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    clear: right;
+}
+
+.motion h3::after {
+    content: url(../images/motionlogo.png);
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.design h3::after {
+    content: url(../images/designlogo.png);
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.dev h3::after {
+    content: url(../images/weblogo.png);
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+
+.dev h3 span {
+    border-bottom: solid 3px #B64D14;
+}
+
+.design h3 span {
+    border-bottom: solid 3px #3B6F68;
+}
+
+.motion h3 span {
+    border-bottom: solid 3px #56A5B4;
+}
+
+.motion img, .design img, .dev img {
+    float: left;
+    margin-left: 90px;
+    max-width: 90px;
+    margin-top: 20px;
+}
+
+/* Showreel */
+
+.container {
+    padding-top: 15px;
+    background-color: #56A5B4;
+    padding-bottom: 50px;
+}
+
+.container h3 span {
+    border-bottom: solid 3px #F4F6F7;
+}
+
+iframe {
+max-width: 100%;
+}
+
+/* Form */
+
+form h3 span {
+    border-bottom: solid 3px #B64D14;
+}
+
+form {
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+.formDiv {
+    background-color: white;
+    width: 100%;
+    padding-top: 10px;
+}
+
+input, textarea {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0 auto;
+    outline: 0;
+    padding: 15px;
+    width: 300px;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+#sendbtn {
+    color: #191919;
+    background-color: #97B2AF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sendbtn:hover {
+    background-color: #60b591;
+}
+
+textarea {
+    width: 300px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* About */
+
+.about {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 10px;
+}
+
+.about h3 span {
+    border-bottom: solid 3px #56A5B4;
+    color: #ffffff;
+}
+
+.about p {
+font-size: 1.3em;
+color: #afafaf;
+font-family: 'Gentium Book Basic', serif;
+}
+    
+/*Footer*/
+
+footer {
+    color: #afafaf;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-bottom: 0px;
+    position: relative;
+    display: block;
+    clear: both;
+    padding: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    #cyclingText {
+        font-size: 7em;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    
+    .motion p, .design p, .dev p {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    }
+    
+    .motion, .design, .dev {
+        margin-left: 20px;
+    }
+    
+    .skillset img {
+        width: 50px;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    #cyclingText {
+        font-size:6em;
+        height: 15%;
+    }
+    
+    .beautiful span {
+        font-size: 2em;
+    }
+    
+    .beautiful {
+        top: 35%;
+    }
+}
