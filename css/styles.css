@@ -240,12 +240,14 @@ form h3 span {
 form {
     margin: 10px auto;
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .formDiv {
     background-color: white;
     width: 100%;
     padding-top: 10px;
+    box-sizing: border-box;
 }
 
 input, textarea {
@@ -261,12 +263,14 @@ input, textarea {
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 #sendbtn {
     color: #191919;
     background-color: #97B2AF;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 #sendbtn:hover {
@@ -359,5 +363,11 @@ footer {
     
     .beautiful {
         top: 35%;
+    }
+}
+
+@media screen and(max-width: 400px) {
+    input, textarea, #sendbtn {
+        width: 95vw;
     }
 }
