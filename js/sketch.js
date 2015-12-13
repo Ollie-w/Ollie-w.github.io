@@ -14,11 +14,11 @@ function draw() {
         
         background(255, 255, 255);
         fill(0, 0, 0);
-        textSize(32);
+        textSize(26);
         textStyle(ITALIC)
         textFont("Playfair Display");
-        text("written in sublime text", 100, 100);
-        text("hosted by github pages", 100, 150);
+        text("written in sublime text", 35, 120);
+        text("hosted by github pages", 35, 150);
 
         for (var i = 0; i < xPositions.length; i++) {
             noStroke();

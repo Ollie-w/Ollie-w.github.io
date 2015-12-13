@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 //Cycle through an array of words and change its color with an array of colors
 
@@ -23,3 +23,18 @@ function timedText() {
 
 
 timedText();
+
+var h = 0;
+function removeGreyscale() {
+    var curr = h % document.images.length,
+        prev = (curr - 1 < 0 ? document.images.length : curr) - 1;
+
+    document.images[curr].style.webkitFilter = "grayscale(0)";
+    document.images[curr].style.filter = "grayscale(0)";
+
+    document.images[prev].style.webkitFilter = "grayscale(1)";
+    document.images[prev].style.filter = "grayscale(1)";
+    h++;
+}
+
+setInterval(removeGreyscale, 1000);
