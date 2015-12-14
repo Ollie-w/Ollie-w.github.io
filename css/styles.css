@@ -140,11 +140,6 @@ top: 0; left: 0; bottom: 0; right: 0;
        filter: grayscale(1);
 }
 
-.skillset img:hover { 
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-}
-
 .skillset h2 {
     color: black;
     text-shadow: 1px 3px 0 rgb(255, 255, 255);
@@ -240,6 +235,64 @@ hr {
 iframe {
 max-width: 100%;
 }
+
+.iLike h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Cloud Animation */
+
+.sky {
+    background-image: url("../images/blueSky.jpg");
+    position: relative;
+    min-width: 100vw;
+    height: 217px;
+}
+
+.cssAnimTxt {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cloud1 {
+    background: url("../images/cloud.png") no-repeat;
+    height: 153px;
+    width: 284px;
+    position: absolute;
+    animation: drift 36s ease-in-out infinite;
+    animation-direction: reverse; 
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    bottom: 5px;
+}
+
+
+.cloud2 {
+    background: url("../images/cloud.png") no-repeat;
+    height: 153px;
+    z-index: 2;
+    width: 284px;
+    position: absolute;
+    animation: drift 31s cubic-bezier(.29,.67,.83,.67) infinite;
+    animation-fill-mode: both;
+    top: 2px;
+}
+
+@keyframes drift {
+    from {transform: translateX(-284px);}
+    to {transform: translateX(1350px);}
+}
+
+
 
 /* Form */
 
